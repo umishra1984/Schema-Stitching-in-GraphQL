@@ -8,7 +8,9 @@ import { HttpLink } from "apollo-link-http";
 import { setContext } from "apollo-link-context";
 import { ApolloServer } from "apollo-server";
 import * as fetch from "isomorphic-fetch";
-require("dotenv-safe").config();
+require("dotenv-safe").config({
+  allowEmptyValues: true
+});
 
 const isBrowser = typeof window !== "undefined";
 
@@ -24,7 +26,7 @@ const link = new HttpLink({
 
 const gitHubLink = setContext(() => ({
   headers: {
-    Authorization: `Bearer process.env.token`
+    Authorization: `Bearer ${process.env.GITHUB_TOKEN}`
   }
 })).concat(link);
 
