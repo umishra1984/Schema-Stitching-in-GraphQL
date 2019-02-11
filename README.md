@@ -1,2 +1,6 @@
-# Schema-Stitching-in-GraphQL
-Github example of Schema Stitching in GraphQL using Typescript
+To run this example, run these commands from the root directory:
+
+```
+$ npm install
+$ npm start
+```

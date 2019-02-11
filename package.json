@@ -1,0 +1,33 @@
+{
+  "name": "schema-stitching",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "apollo-link": "^1.2.2",
+    "apollo-link-context": "^1.0.14",
+    "apollo-link-http": "^1.5.4",
+    "apollo-server": "^2.0.5",
+    "cross-env": "^5.2.0",
+    "graphql": "^0.13.2",
+    "graphql-tools": "^3.1.1",
+    "isomorphic-fetch": "^2.2.1",
+    "node-fetch": "^2.2.0",
+    "reflect-metadata": "^0.1.13",
+    "typescript": "^3.3.1"
+  },
+  "devDependencies": {
+    "@types/isomorphic-fetch": "0.0.34",
+    "@types/node": "^10.12.21",
+    "@types/node-fetch": "^2.1.4",
+    "dotenv-safe": "^6.1.0",
+    "object-assign": "^4.1.1",
+    "ts-node": "^8.0.2"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=development ts-node index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
